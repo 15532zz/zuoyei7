@@ -1,0 +1,62 @@
+﻿7cf0253 (HEAD -> master) 自主实践：星球宇宙场景 + 运行截图 + 进度报告七
+1ad0006 A-Frame校园角标主题场景与动画
+0604886 Three.js旋转展示台：底座、展品组、双光源与动画
+commit 7cf0253945d86ae282d75b7f4e0a9ad827a7d416
+Author: Student <student@example.com>
+Date:   Wed Sep 16 16:25:47 2026 +0800
+
+    自主实践：星球宇宙场景 + 运行截图 + 进度报告七
+    
+    - 主题：太阳系简化版，5颗行星按不同速度公转 + 自转
+    - 中央恒星：自发光球 + 半透明晕层 + PointLight 向外照射
+    - 木星带圆环（TorusGeometry + 倾角）
+    - 星空背景：2000 颗 BufferGeometry 粒子点云
+    - 轨道线：RingGeometry 半透明可视化
+    - 6 张运行截图（showcase/campus/my-scene 各两张不同视角）
+    - 完成课堂实践进度报告七（含十节栏目与截图）
+
+ three-d/my-scene.html                              |  13 ++
+ three-d/my-scene.js                                | 138 +++++++++++++++++++++
+ three-d/screenshots/campus_v1.png                  | Bin 0 -> 631758 bytes
+ three-d/screenshots/campus_v2.png                  | Bin 0 -> 631486 bytes
+ three-d/screenshots/my-scene_v1.png                | Bin 0 -> 57173 bytes
+ three-d/screenshots/my-scene_v2.png                | Bin 0 -> 55267 bytes
+ three-d/screenshots/showcase_v1.png                | Bin 0 -> 76129 bytes
+ three-d/screenshots/showcase_v2.png                | Bin 0 -> 74783 bytes
+ ...2\246\346\212\245\345\221\212\344\270\203.docx" | Bin 0 -> 1551182 bytes
+ 9 files changed, 151 insertions(+)
+
+commit 1ad000679b1ff8c222b8efce5bddede78ab2c823
+Author: Student <student@example.com>
+Date:   Wed Sep 16 16:25:38 2026 +0800
+
+    A-Frame校园角标主题场景与动画
+    
+    - 案例复现第二步：天空 + 草地 + 教学楼 + 飘动红旗 + 脉动路灯
+    - a-plane 旋转 -90 度放平当草地
+    - 旗帜 position 动画 + 路灯 scale 动画（dir: alternate 往返）
+    - 加入 a-light 环境光 + 点光源 + a-camera 初始位
+
+ three-d/campus.html | 42 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 42 insertions(+)
+
+commit 0604886260eb5bb186a04347ec31eef3e81e0aa9
+Author: Student <student@example.com>
+Date:   Wed Sep 16 16:25:30 2026 +0800
+
+    Three.js旋转展示台：底座、展品组、双光源与动画
+    
+    - 案例复现第一步：圆形展台 + 3个几何体 + 双光源 + 缓转动画
+    - 加入 OrbitControls 支持鼠标拖拽与滚轮缩放
+    - 加入窗口 resize 适配（aspect + 投影矩阵 + setSize）
+    - 附 homework-7.docx 作业要求与 student-guide-7.docx 实践指南
+
+ .gitignore                    |   16 +
+ homework-7.docx               |  Bin 0 -> 14482 bytes
+ student-guide-7.docx          |  Bin 0 -> 60508 bytes
+ three-d/libs/OrbitControls.js | 1045 +++++++++++++++
+ three-d/libs/aframe.min.js    | 2795 +++++++++++++++++++++++++++++++++++++++++
+ three-d/libs/three.min.js     |    6 +
+ three-d/showcase.html         |   13 +
+ three-d/showcase.js           |   64 +
+ 8 files changed, 3939 insertions(+)
