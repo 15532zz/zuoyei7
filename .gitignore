@@ -1,0 +1,16 @@
+# Word/Excel 临时文件
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# 临时解压目录
+_tmp_extract/
+_tmp_extract.zip
+_tmp_extract2/
+_tmp_extract2.zip
+
+# IDE / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
