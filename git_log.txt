@@ -1,6 +1,34 @@
-﻿7cf0253 (HEAD -> master) 自主实践：星球宇宙场景 + 运行截图 + 进度报告七
+﻿566d66f (HEAD -> master, origin/master) 更新进度报告：填入仓库地址、git log证据、故意实验观察
+434e65a 添加 git log 输出作为提交证据
+7cf0253 自主实践：星球宇宙场景 + 运行截图 + 进度报告七
 1ad0006 A-Frame校园角标主题场景与动画
 0604886 Three.js旋转展示台：底座、展品组、双光源与动画
+commit 566d66f02e2ed322c3a65d384943c89c3fdc978b
+Author: Student <student@example.com>
+Date:   Wed Sep 16 17:00:18 2026 +0800
+
+    更新进度报告：填入仓库地址、git log证据、故意实验观察
+    
+    - 仓库地址改为 https://github.com/15532zz/zuoyei7.git
+    - git log 证据填入实际4条提交记录
+    - 问题与解决改为故意实验（Group vs 逐个mesh、相机进物体、删libs看报错）
+    - 当次收获保持5句知识总结格式
+
+ ...2\246\346\212\245\345\221\212\344\270\203.docx" | Bin 1551182 -> 1550503 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 434e65a23be76edc8f3408f8622ba574c26bdd71
+Author: Student <student@example.com>
+Date:   Wed Sep 16 16:26:09 2026 +0800
+
+    添加 git log 输出作为提交证据
+    
+    - 包含 3 次提交的完整 hash、作者、日期、说明
+    - 用于进度报告七第五节代码仓库证据
+
+ git_log.txt | 62 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 62 insertions(+)
+
 commit 7cf0253945d86ae282d75b7f4e0a9ad827a7d416
 Author: Student <student@example.com>
 Date:   Wed Sep 16 16:25:47 2026 +0800
